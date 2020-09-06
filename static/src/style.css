@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap");
+
+:root {
+  --primary-color: #eb8f8f;
+  --body-color: #f9f9f9;
+  --text-color: #ec0101;
+  --text-color-dark: #999;
+  --table-head-color: #cd0a0a;
+}
+
+* {
+  font-family: "Merriweather", serif;
+}
+
+body {
+  background-color: var(--body-color);
+  margin-bottom: 0 !important;
+}
+
+nav a,
+tbody a {
+  text-transform: capitalize;
+  color: var(--text-color--dark);
+}
+
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+nav a:hover,
+nav:focus a,
+.footer a:hover,
+.footer:focus a {
+  color: var(--body-color);
+}
+
+footer a {
+  color: var(--table-head-color);
+}
+
+/* table */
+.table {
+  margin: 6.2rem 1.6rem;
+}
+
+thead {
+  background: var(--table-head-color);
+  color: var(--body-color);
+}
+
+thead th {
+  cursor: pointer;
+  border: none !important;
+}
+
+tbody {
+  display: block;
+  height: 18.75rem;
+  overflow-y: scroll;
+}
+
+tbody a {
+  margin: 3px;
+}
+
+thead,
+tbody tr {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+/* Icons */
+tbody ion-icon {
+  font-size: 1.2rem;
+  color: var(--text-color);
+}
+
+/* Footer and Breadcrumb */
+nav,
+footer {
+  display: fixed;
+  border: none !important;
+  color: var(--body-color);
+}
+
+nav {
+  top: 0;
+  text-transform: capitalize;
+}
+
+footer {
+  bottom: 0;
+  margin: 0 !important;
+}
+
+.breadcrumb,
+.footer {
+  background-color: var(--primary-color);
+  width: 100%;
+  height: 3.5rem;
+  padding: 1.2rem;
+  border-radius: 0;
+}
+
+/* customize the scrollbars */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
